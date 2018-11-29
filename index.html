@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mandatory-js-2: Tic tac toe</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+<body onload="resetGame();">
+	<h1>tic tac toe</h1>
+	<p>player X  Vs  player O</p>
+	<div id="message">MESSAGE HERE</div>
+
+	<table align="center" border = "1">
+		<tr>
+			<td id="s1" onClick="nextMove(this)"></td>
+			<td id="s2" onClick="nextMove(this)"></td>
+			<td id="s3" onClick="nextMove(this)"></td>
+		</tr>
+		<tr>
+			<td id="s4" onClick="nextMove(this)"></td>
+			<td id="s5" onClick="nextMove(this)"></td>
+			<td id="s6" onClick="nextMove(this)"></td>
+		</tr>
+		<tr>
+			<td id="s7" onClick="nextMove(this)"></td>
+			<td id="s8" onClick="nextMove(this)"></td>
+			<td id="s9" onClick="nextMove(this)"></td>
+		</tr>
+	</table>
+	<input type="button" id="btnReset" onclick="location.href='javascript: resetGame();';" value="reset" />
+	<script src="main.js"></script>
+</body>
+</html>
